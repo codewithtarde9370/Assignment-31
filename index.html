@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A-31 Product preview</title>
     <style>
+        body{
+            background-color: #FBAB7E;
+background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+
+        }
         .preview-image{
              height: 400px;
              width: 400px;
@@ -15,12 +20,17 @@
              margin: 20px auto;
              display: block;
              border-radius: 5px;
-
+             background-color: #85FFBD;
+             background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+             
         }
         .img-container{
             
             display:flex;
             justify-content: center;
+            background-color: #85FFBD;
+            background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+            
 
         }
         .product-image{
@@ -33,9 +43,16 @@
             cursor: pointer;
             
         }
+        .head{
+            text-align: center;
+            font-size: 2em;
+            font-family: sans serif;
+            color: maroon;
+        }
     </style>
 </head>
 <body>
+    <h2 class="head">Product Preview</h2>
     <img src="./laptop.jpg" id="img" class="preview-image"/> 
     <div class="img-container">
         <img src="./1.jpg" class="product-image" onclick="changeImg(1)"/>
